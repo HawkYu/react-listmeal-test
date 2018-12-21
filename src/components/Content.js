@@ -36,7 +36,7 @@ class Content extends Component {
                 </div>
                 <div className="p_content">		
                     <div className="p_info">				
-                        <img style={{'width':'103px','height':'103px'}} src={this.state.domain+this.state.list.img_url} />
+                        {this.state.list.img_url!=''?<img style={{'width':'103px','height':'103px'}} src={this.state.domain+this.state.list.img_url} />:''}
                         <h2>{this.state.list.title}</h2>				
                         <p className="price">{this.state.list.price}/份</p>
                     </div>
